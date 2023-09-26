@@ -1,1 +1,5 @@
-# Social_Books_API
+#Fazedo uma API REST
+
+## Lucas Veira Azevedo
+ - RA 00014820 
+ 
