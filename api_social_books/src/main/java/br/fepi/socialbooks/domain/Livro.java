@@ -12,6 +12,12 @@ public class Livro {
 	private String resumo;
 	private String autor;
 	
+	
+	
+	public Livro(String nome) {
+		this.nome = nome;
+	}
+	
 	private List<Comentario> comentarios;
 	
 	public Long getId() {
