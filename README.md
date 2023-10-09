@@ -1,4 +1,4 @@
-#Fazedo uma API REST
+#Fazendo uma API REST
 
 ## Lucas Veira Azevedo
  - RA 00014820 
