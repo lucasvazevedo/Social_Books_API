@@ -1,5 +1,8 @@
 package br.fepi.socialbooks.resources;
 
+import java.util.Arrays;
+import java.util.List;
+
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -10,13 +13,19 @@ import br.fepi.socialbooks.domain.Livro;
 public class LivrosResources {
 	
 	@RequestMapping(value = "/livros",method = RequestMethod.GET)
-	public Livro listar() {
+	public List<Livro> listar() {
 		
 		Livro livro1 = new Livro("Arte da guerra"); 
 		Livro livro2 = new Livro("O pequieno príncipe");
 		Livro livro3 = new Livro("1984");
 		
-		return livro3;
+		livro1.setAutor("Sun Tsu");
+		
+		Livro[] livros = {
+			livro1, livro2, livro3	
+		};
+		
+		return Arrays.asList(livros);
 		
 	}
 	
