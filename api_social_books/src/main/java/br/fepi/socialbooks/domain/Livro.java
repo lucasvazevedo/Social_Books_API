@@ -39,6 +39,10 @@ public class Livro {
 		this.nome = nome;
 	}
 	
+	public Livro() {
+		
+	}
+	
 	public Long getId() {
 		return id;
 	}
